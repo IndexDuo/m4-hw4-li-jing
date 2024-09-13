@@ -1,0 +1,73 @@
+/* Change the font-size of one or more elements.
+2. Change the text color of one or more elements.
+3. Change the background color of at least one element.
+4. Center the text of at least one element.
+5. Center an image element.
+6. Group any CSS rules if appropriate using the grouping selector.
+ Ex: If both h1 and h2 elements have rules for text-align: center,
+that rule can be applied to both using a comma: h1, h2 {text-
+align: center;}
+7. Use at least one combined CSS selector.
+ Ex: div.link (a div element with a class of link)
+ Ex: .link.link-active (an element with both the link and link-
+active classes)
+8. Use at least one CSS combinator.
+ Ex: header > .link (an element with a class of link that is a
+direct child of a header element)
+ Ex: div .link (an element with a class of link that is contained
+somewhere within a header element) */
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    background-color: #f3f0f5;
+    
+}
+
+#colored-text{
+    color: #4c0880;
+}
+
+h1, h2{
+    text-align: center;
+    
+}
+
+nav{
+    text-align: center;
+}
+
+nav a{
+    background-color: #f3f0f5;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+
+nav a:hover{
+    background-color: #e7dfed;
+    color: #333;
+}
+
+img{
+    
+    border: 5px solid #b67ecc;
+    border-radius: 10px;
+}   
+
+p {
+}
+
+
+
+table, th, td{
+    border: 1px solid #b67ecc;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer{
+    text-align: right;
+}
