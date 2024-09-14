@@ -1,70 +1,77 @@
-/* Change the font-size of one or more elements.
-2. Change the text color of one or more elements.
-3. Change the background color of at least one element.
-4. Center the text of at least one element.
-5. Center an image element.
-6. Group any CSS rules if appropriate using the grouping selector.
- Ex: If both h1 and h2 elements have rules for text-align: center,
-that rule can be applied to both using a comma: h1, h2 {text-
-align: center;}
-7. Use at least one combined CSS selector.
- Ex: div.link (a div element with a class of link)
- Ex: .link.link-active (an element with both the link and link-
-active classes)
-8. Use at least one CSS combinator.
- Ex: header > .link (an element with a class of link that is a
-direct child of a header element)
- Ex: div .link (an element with a class of link that is contained
-somewhere within a header element) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f5;
+    color: #26093d;
+}
 
 h1{
     font-size: 36px;
-    text-align: center;
-    background-color: #f3f0f5;
-    
 }
 
 #colored-text{
     color: #4c0880;
 }
 
-h1, h2{
+body h1, h2{
     text-align: center;
     
 }
 
-nav{
+header nav{
     text-align: center;
 }
 
-nav a{
-    background-color: #f3f0f5;
+header nav a{
+    background-color: #eae6ed;
     border-radius: 5px;
     padding: 5px 10px;
     margin-left: 30px;
+    color: #26093d; 
 }
 
-nav a:hover{
+header nav a:hover{
     background-color: #e7dfed;
     color: #333;
 }
 
-img{
-    
+header nav a:visited{
+    color: #26093d;
+}
+
+section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border: 5px solid #b67ecc;
     border-radius: 10px;
 }   
 
-p {
+main p {
+    text-align: center;
+    margin-left: auto;
 }
 
 
 
 table, th, td{
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #b67ecc;
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
+}
+
+/* > selects all descendants */
+section#concerts > div#concert-schedule-container {
+    text-align: center;
+}
+
+/* SPACE selects all direct children */
+section#concerts ul{
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
 }
 
 
