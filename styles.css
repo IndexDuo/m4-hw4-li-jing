@@ -4,56 +4,56 @@ body {
     color: #26093d;
 }
 
-h1{
+h1 {
     font-size: 36px;
 }
 
-#colored-text{
+#colored-text {
     color: #4c0880;
 }
 
-body h1, h2{
-    text-align: center;
-    
-}
-
-header nav{
+body h1,
+h2 {
     text-align: center;
 }
 
-header nav a{
+header nav {
+    text-align: center;
+}
+
+header nav a {
     background-color: #eae6ed;
     border-radius: 5px;
     padding: 5px 10px;
     margin-left: 30px;
-    color: #26093d; 
+    color: #26093d;
 }
 
-header nav a:hover{
+header nav a:hover {
     background-color: #e7dfed;
     color: #333;
 }
 
-header nav a:visited{
+header nav a:visited {
     color: #26093d;
 }
 
-section img{
+section img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 5px solid #b67ecc;
     border-radius: 10px;
-}   
+}
 
 main p {
     text-align: center;
     margin-left: auto;
 }
 
-
-
-table, th, td{
+table,
+th,
+td {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #b67ecc;
@@ -68,12 +68,11 @@ section#concerts > div#concert-schedule-container {
 }
 
 /* SPACE selects all direct children */
-section#concerts ul{
+section#concerts ul {
     display: inline-block;
     text-align: left;
 }
 
-
-footer{
+footer {
     text-align: right;
 }
