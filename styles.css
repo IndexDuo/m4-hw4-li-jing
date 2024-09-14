@@ -69,7 +69,6 @@ section#concerts > div#concert-schedule-container {
 
 /* SPACE selects all direct children */
 section#concerts ul{
-    list-style-type: none;
     display: inline-block;
     text-align: left;
 }
